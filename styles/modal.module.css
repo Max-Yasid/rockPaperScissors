@@ -1,0 +1,39 @@
+.modal-width{
+    max-width: 350px !important;
+    padding: 0;
+}
+.rules-title{
+    font-family: var(--barlow-350);
+    font-weight: 700;
+    line-height: 50%;
+    color: var(--dark-text);
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px 0 10px;
+}
+.c-pointer{
+    cursor: pointer;
+}
+@media only screen and (max-width: 575px){
+    .modal-width{
+        max-width: 350px !important;
+        margin: 0 auto;
+        padding: 0 !important;
+    }
+}
+@media only screen and (max-width: 375px){
+    .modal-container{
+        height: 99vh;
+        margin: 0 !important;
+    }
+    .modal-header{
+        display: flex;
+        justify-content: center;
+        height: 15vh;
+    }
+    .modal-body{
+        height: 65vh;
+    }
+}

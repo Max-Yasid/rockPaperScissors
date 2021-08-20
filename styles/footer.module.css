@@ -1,0 +1,22 @@
+.footerContainer{
+    padding: 0 20px;
+    text-align: end;
+    height: 8vh;
+}
+.rulesButton{
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family: var(--barlow-350);
+    font-weight: 600;
+    background-color: transparent;
+    padding: 4px 32px;
+    letter-spacing: 2px;
+}
+@media only screen and (max-width: 375px){
+    .footerContainer{
+        display: grid;
+        place-items: center;
+        height: 20vh;
+    }
+}

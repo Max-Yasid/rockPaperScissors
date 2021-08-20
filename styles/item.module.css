@@ -1,0 +1,180 @@
+.body{
+    height: 60vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.gameResultsContainer{
+    height: 100%;
+    width: 850px;
+    max-width: 90vw;
+    display: flex;
+    justify-content: center;
+}
+.selectedItemtitle{
+    height: 20%;
+    color: white;
+    font-family: var(--barlow-350);
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    align-items: center;
+}
+.selectedItem{
+    display: grid;
+    place-items: center;
+    height: 80%;
+    margin-right: 25px;
+}
+.p1Election{
+    margin-right: 25px;
+    padding-left: 25px;
+    margin-left: 0;
+}
+.houseElection{
+    margin-left: 25px;
+    padding-right: 25px;
+    margin-right: 0;
+}
+.gameItemContainer{
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.houseItemPlaceholder{
+    width: 213px;
+    height: 213px;
+    border-radius: 300px;
+    background-color: rgb(23,34,63);
+}
+.gameResult{
+    justify-content: center;
+        position: relative;
+    z-index: 10;
+    overflow: hidden;
+    text-align: center;
+}
+.width0{
+    width: 0;
+}
+.widthFitContent{
+    width: fit-content;
+}
+.gameResultText{
+    color: white;
+    font-weight: 700;
+    font-size: 3em;
+    font-family: var(--barlow-350);
+    text-align: center;
+}
+.playAgain{
+    color: hsl(214, 47%, 23%);
+    background-color: white;
+    border: none;
+    font-family: var(--barlow-350);
+    letter-spacing: 2px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+}
+.itemContainerShadow{
+    background-color: rgba(245, 245, 245, 0.027);
+    border-radius: 200px;
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.itemContainerShadow::before{
+    content: "";
+    background-color: rgba(245, 245, 245, 0.027);
+    border-radius: 400px;
+    width: 445px;
+    height: 445px;
+    position: absolute;
+}
+.itemContainerShadow::after{
+    content: "";
+    background-color: rgba(245, 245, 245, 0.027);
+    border-radius: 400px;
+    width: 550px;
+    height: 550px;
+    position: absolute;
+}
+@media only screen and (max-width: 375px) {
+    .body{
+        height: 50vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .selectedItemtitle{
+        height: 20%;
+        color: white;
+        font-family: var(--barlow-350);
+        letter-spacing: 2px;
+        font-size: .8em;
+        align-items: flex-start;
+    }
+    .houseItemPlaceholder{
+        width: 100px;
+        height: 100px;
+        border-radius: 300px;
+        background-color: rgb(23,34,63);
+    }
+    .p1Election{
+        margin-right: 10px;
+        padding-left: 10px;
+    }
+    .houseElection{
+        margin-left: 10px;
+        padding-right: 10px;
+    }
+    .gameResultText{
+        color: white;
+        font-weight: 700;
+        font-size: 2em;
+        font-family: var(--barlow-350);
+        text-align: center;
+    }
+    
+    .playAgain{
+        color: hsl(214, 47%, 23%);
+        background-color: white;
+        border: none;
+        font-family: var(--barlow-350);
+        letter-spacing: 2px;
+        width: 100%;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+    
+    .itemContainerShadow{
+        background-color: rgba(245, 245, 245, 0.027);
+        border-radius: 200px;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .itemContainerShadow::before{
+        content: "";
+        background-color: rgba(245, 245, 245, 0.027);
+        border-radius: 400px;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+    }
+    .itemContainerShadow::after{
+        content: "";
+        background-color: rgba(245, 245, 245, 0.027);
+        border-radius: 400px;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+    }
+}
